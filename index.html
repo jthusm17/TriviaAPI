@@ -8,16 +8,35 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 <body>
+<style>
+div {
+  color: purple;
+  background: black;
+}
+body {
+  background-color:crimson;
+}
+</style>
 
 <div class="container">
-  <div class="jumbotron">
+  <div class="jumbotron" style="margin-bottom: 100px">
     <h1>Trivia Game</h1>      
-    <p>This is a trivia game.</p>
+    <p id='quest'>This is a trivia game.</p>
+    <p id='score'> Your score: 0</p>
   </div>
-  <p>This is some text.</p>      
+  <p id="help" style="color:white;">Click true or false.</p>
+  <button id="trueBtn" class="btn btn-lg btn-info" >True</button>
+  <button id="falseBtn" class="btn btn-lg btn-info" >False</button>  
+  <button id="nextBtn" class="btn btn-lg btn-info" >Next Question</button>
+  <button id="resetBtn" class="btn btn-lg btn-info" >Reset?</button>     
 </div>
 
+
+<script src="javascript2.js"></script>
 </body>
 </html>
