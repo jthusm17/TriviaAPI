@@ -22,7 +22,7 @@ $(document).ready(function(){
         quest.text(data.results[arrayNum].question)
 
     // functions
-    let rightAnswer = data.results[arrayNum].correct_answer;
+    
     const truePress=() => {
         userChoice =  'True'
         console.log("true pressed");
@@ -32,6 +32,7 @@ $(document).ready(function(){
         console.log("false pressed");
     }
     const checkAnswer=() => {
+        let rightAnswer = data.results[arrayNum].correct_answer;
         if(userChoice ==  rightAnswer) {
         scoreNum++;
         help.text("Correct!");
